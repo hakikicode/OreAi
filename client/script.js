@@ -201,7 +201,7 @@ const handle = async () => {
 
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
-  const response = await fetch('https://OreAi.onrender.com/', {
+  const response = await fetch('https://oreai.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -288,7 +288,7 @@ async function translateNew(messageDiv, parsedData) {
   sourceText += " \n ";
   sourceText += parsedData;
 
-  const response = await fetch('https://OreAi.onrender.com/', {
+  const response = await fetch('https://oreai.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
